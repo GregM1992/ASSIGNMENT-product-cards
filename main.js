@@ -19,7 +19,7 @@ const spiderInfo = [
  {
     id:2,
     spiderType: "Phiddipus Audax",
-    spiderDescription: "Fuzzy, Cute, Tiny, Maybe orange",
+    spiderDescription: "The presence of a distinct white triangle in the center of the back with two smaller spots below it is often used to distinguish this species",
     availability: true,
     specifications: {
       gender: "unknown",
@@ -48,12 +48,12 @@ const spiderInfo = [
     five: "60.00",
     twenty: "120.00"
   },
-  imageUrl: "images/ari.jpg"
+  imageUrl: "images/ari.jpeg"
 },
 {
   id: 4,
-  spiderType: "Habronattus americanus",
-  spiderDescription: "Fuzzy, Cute, Really tiny, Very Red",
+  spiderType: "Habronattus Americanus",
+  spiderDescription: "This spider is black coloured from top, It has red pedipalps, along with parts of the legs. The red color is used to attract female mates with courtship displays.",
   availability: true,
   specifications: {
     gender: "unknown",
@@ -81,7 +81,8 @@ const cardsOnDom = (array) => {
   
   for(const spider of array){
     
-    domString += `
+    domString += 
+    `
     <div class="card" style="width: 18rem;">
         <div class="card-body">
           <div class="top">
@@ -91,22 +92,22 @@ const cardsOnDom = (array) => {
             <p id="avail" class="card-text">${spider.availability}</p>
           </div>
           <div class="middle">
-            <header>${spider.specifications}</header>
-            <p>${spider['specifications'].gender}</p>
-            <p>${spider['specifications'].instar}</p>
-            <footer>${spider['specifications'].birth}</footer>
+            <header>Information</header>
+            <p>Gender: ${spider['specifications'].gender}</p>
+            <p>Instar: ${spider['specifications'].instar}</p>
+            <footer>DOB: ${spider['specifications'].birth}</footer>
           </div>
           <div class="bottom">
-            <header>${spider.pricing}</header>
-            <p>Price for 5 ${spider['pricing'].one}</p>
-            <p>Price for 10 ${spider['pricing'].five}</p>
-            <p>Price for 20 ${spider['pricing'].twenty}</p>
+            <header>Pricing</header>
+            <p>Price for 5:  ${spider['pricing'].one}</p>
+            <p>Price for 10:  ${spider['pricing'].five}</p>
+            <p>Price for 20:  ${spider['pricing'].twenty}</p>
           </div>
         </div>
-      </div>`;
+      </div>
+      `;
   }
-
   renderToDom('#spider-app', domString);
 };
 
-cardsOnDom(spiders);
+cardsOnDom(spiderInfo);
