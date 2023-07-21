@@ -57,7 +57,7 @@ const spiderInfo = [
   id: 4,
   spiderType: "Habronattus Americanus",
   spiderDescription: "This spider is black coloured from top, It has red pedipalps, along with parts of the legs. The red color is used to attract female mates with courtship displays.",
-  availability: false,
+  availability: true,
   specifications: {
     gender: "unknown",
     instar: "5th",
