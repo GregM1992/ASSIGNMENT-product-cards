@@ -1,59 +1,78 @@
 body{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   background-color: #03160a;
 }
 
-.card{
-flex-basis: 33.333;
-border: none;
--webkit-border-radius: 45px;
-border-radius: 45px;
-background: #57755b;
--webkit-box-shadow: 17px 17px 63px #232f24, -17px -17px 63px #8bbb92;
-box-shadow: 17px 17px 63px #232f24, -17px -17px 63px #8bbb92;
-margin-bottom: 40px;
+#spider-app{
+  display: flex;
+  flex-wrap: wrap;
+
+  
 }
+.card{
+display: flex;
+flex-basis: 33.333%;
+justify-content: space-between;
+background-image: url("images/shrub.jpg");
+background-size: cover;
+border-radius: 29px;
+}
+
 .card-body{
-  border-radius:29px ;
-  background-image: url("images/shrub.jpg");
-  background-size: cover;
   color:#e9edc9 ;
   font-family: 'Peralta', cursive;
   text-shadow:0 0 5px #0a0f03;
-  padding: 0;
 }
+
+
 img{
+  height: 200px;
   border:px solid #03160a;
   z-index: 1;
 }
+
+
 #sold-out{
   position: absolute;
   z-index: 2;
   left: 0px;
 }
+
+
 .card-title{
   border: 1px solid lightblue;
   border-radius: 29px;
   padding: 4px;
 }
+
+
 .top{
   text-align: center;
 }
+
+
 .card-text{
   text-align: justify;
 }
+
+
 .middle{
   text-align: center;
 font-weight: bold;
 }
+
+
 #avail{
+  position: sticky;
   text-align: center;
   background-color: darkgray;
   color: yellow;
   width: 100%;
 }
+
+
 .bottom{
+  display: flex;
   text-align: center;
+
 }
