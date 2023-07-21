@@ -21,7 +21,7 @@ const spiderInfo = [
     id:2,
     spiderType: "Phiddipus Audax",
     spiderDescription: "The presence of a distinct white triangle in the center of the back with two smaller spots below it is often used to distinguish this species",
-    availability: true,
+    availability: false,
     specifications: {
       gender: "unknown",
       instar: "3rd",
@@ -86,8 +86,8 @@ const cardsOnDom = (array) => {
   for(const spider of array){
     
     domString += 
-    `
-    <div class="card" style="width: 18rem;">
+     `
+      <div class="card" style="width: 18rem;">
         <div class="card-body">
           <div class="top">
             <h2 class="card-title">${spider.spiderType}</h2>
